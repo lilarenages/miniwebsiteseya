@@ -87,7 +87,7 @@ function showMessage(type) {
                 </p>
             `;
             soundFile = "sounds/relaxand.mp3";
-            audio.volume = 0.8; // 20% громкости
+            audio.volume = 0.9; // 20% громкости
             break;
 
              case 'otdih':
@@ -162,4 +162,5 @@ function showMessage(type) {
     
     messageDiv.innerHTML = content;
     messageDiv.scrollIntoView({ behavior: 'smooth' });
+
 }
