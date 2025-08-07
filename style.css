@@ -1,0 +1,126 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(45deg, #fff0f5, #fff9fb);
+    min-height: 100vh;
+    margin: 0;
+    padding: 40px 20px; /* Больше отступов по краям */
+    text-align: center;
+}
+
+.container {
+    max-width: 1400px; /* Шире контейнер */
+    margin: 0 auto;
+    padding: 40px; /* Больше внутренних отступов */
+}
+
+h1 {
+    color: #ff66b3;
+    font-size: 3em; /* Крупнее заголовок */
+    margin-bottom: 50px; /* Больше отступ */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.buttons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* Шире колонки */
+    gap: 40px; /* Больше расстояние между карточками */
+    margin-bottom: 50px;
+}
+
+.button-item {
+    cursor: pointer;
+    transition: all 0.4s;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    height: 400px; /* Очень большие карточки */
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px; /* Отступ внутри карточки */
+    border: 2px solid #ffe6f0;
+}
+
+.button-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+    border-color: #ffb6d8;
+}
+
+.button-item img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+#message {
+    background: white;
+    padding: 40px;
+    border-radius: 25px;
+    margin-top: 50px;
+    animation: fadeIn 0.6s;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    font-size: 24px;
+    color: #555;
+    line-height: 1.6;
+}
+
+#message img {
+    max-width: 500px;
+    max-height: 400px;
+    border-radius: 20px;
+    margin: 30px 0;
+    object-fit: contain;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Адаптив */
+@media (max-width: 1200px) {
+    .buttons-grid {
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        gap: 30px;
+    }
+    .button-item {
+        height: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 30px 20px;
+    }
+    .buttons-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    .button-item {
+        height: 300px;
+    }
+    h1 {
+        font-size: 2.5em;
+    }
+    #message {
+        padding: 30px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .button-item {
+        height: 250px;
+    }
+    #message img {
+        max-width: 100%;
+    }
+}

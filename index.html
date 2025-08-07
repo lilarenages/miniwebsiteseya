@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мини сайтик для Даши</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Мини сайтик для Даши 💖</h1>
+        
+        <div class="buttons">
+            <!-- Кнопка 1 -->
+            <button onclick="showMessage('meow')">
+                <img src="images/Слой 10.png" alt="Нажми прямо сейчас">
+                
+            </button>
+            
+            <!-- Кнопка 2 -->
+            <button onclick="showMessage('miss-me')">
+                <img src="images/Слой 2.png" alt="Скучаешь">
+                
+            </button>
+
+             <!-- Кнопка 3 -->
+            <button onclick="showMessage('sora')">
+                <img src="images/Слой 3.png" alt="Нажми, если мы поссорились">
+                
+            </button>
+
+             <!-- Кнопка 4 -->
+            <button onclick="showMessage('otdih')">
+                <img src="images/Слой 4.png" alt="Нажми, если хочется расслабиться">
+                
+            </button>
+            
+            <!-- Кнопка 5 -->
+            <button onclick="showMessage('relaxand')">
+                <img src="images/Слой 5.png" alt="Нажми, если не можешь заснуть">
+                
+            </button>
+
+            <!-- Кнопка 6 -->
+            <button onclick="showMessage('jin')">
+                <img src="images/Слой 6.png" alt="Нажми, если нечем заняться">
+                
+            </button>
+
+            <!-- Кнопка 7 -->
+            <button onclick="showMessage('jarkopon')">
+                <img src="images/Слой 7.png" alt="Нажми, если тебе холодно">
+                
+            </button>
+
+            <!-- Кнопка 8 -->
+            <button onclick="showMessage('besiat')">
+                <img src="images/Слой 8.png" alt="Нажми, если все бесят">
+                
+            </button>
+
+            <!-- Кнопка 9 -->
+            <button onclick="showMessage('hard-day')">
+                <img src="images/Слой 9.png" alt="не общаться">
+                
+            </button>
+
+            <!-- Кнопка 10 -->
+            <button onclick="showMessage('membob')">
+                <img src="images/Слой 1.png" alt="Трудный день">
+                
+            </button>
+        
+        <div id="message" class="hidden"></div>
+    </div>
+
+    <!-- Аудио элементы -->
+    <audio id="sound" preload="auto"></audio>
+    
+    <script src="script.js"></script>
+</body>
+</html>
